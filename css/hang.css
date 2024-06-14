@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: url(../images/phong\ canh\ 1.gif);
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    color: red; /* Đổi màu chữ thành đỏ */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.total {
+    text-align: right;
+    margin-top: 20px;
+    color: white; /* Đổi màu chữ của phần tổng cộng thành màu xanh lá */
+}
+
+  

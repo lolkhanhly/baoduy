@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mũ thời trang hàng đầu</title>
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="toanboweb.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <style>
+        .bgmsp {
+            background-color: rgb(100, 112, 129);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+        .bgmsp label {
+            font-weight: 700;
+        }
+    </style>
+     <script>
+        function submitForm(event) {
+            event.preventDefault(); // Ngăn chặn việc submit form mặc định
+            alert("Bạn đã hoàn tất đơn hàng thành công");
+        }
+    </script>
+    <script>
+        /*phần mua hàng */
+        var vietnamDistricts = {
+            "Hà Nội": ["Ba Đình", "Hoàn Kiếm", "Hai Bà Trưng", "Đống Đa", "Tây Hồ", "Cầu Giấy", "Thanh Xuân", "Hoàng Mai", "Long Biên", "Bắc Từ Liêm", "Nam Từ Liêm", "Hà Đông", "Sơn Tây", "Ba Vì", "Phúc Thọ", "Đan Phượng", "Hoài Đức", "Quốc Oai", "Thạch Thất", "Chương Mỹ", "Thanh Oai", "Thường Tín", "Phú Xuyên", "Ứng Hòa", "Mỹ Đức"],
+            "Hồ Chí Minh": ["Quận 1", "Quận 2", "Quận 3", "Quận 4", "Quận 5", "Quận 6", "Quận 7", "Quận 8", "Quận 9", "Quận 10", "Quận 11", "Quận 12", "Bình Tân", "Bình Thạnh", "Gò Vấp", "Phú Nhuận", "Tân Bình", "Tân Phú", "Thủ Đức", "Bình Chánh", "Cần Giờ", "Củ Chi", "Hóc Môn", "Nhà Bè"],
+            // Thêm các quận/huyện khác ở các tỉnh thành khác vào đây
+        };
+
+        // Hàm để tạo danh sách các quận/huyện dựa trên tỉnh/thành phố được chọn
+        function createDistrictOptions() {
+            var citySelect = document.getElementById("city");
+            var districtSelect = document.getElementById("district");
+            var selectedCity = citySelect.value;
+            // Xóa tất cả các tùy chọn trước đó
+            districtSelect.innerHTML = "";
+            // Nếu không có tỉnh/thành phố nào được chọn, không hiển thị gì cả
+            if (selectedCity === "") {
+                return;
+            }
+            // Lấy danh sách các quận/huyện tương ứng với tỉnh/thành phố được chọn
+            var districts = vietnamDistricts[selectedCity];
+            // Tạo tùy chọn cho mỗi quận/huyện và thêm vào phần chọn
+            districts.forEach(function (district) {
+                var option = document.createElement("option");
+                option.value = district;
+                option.textContent = district;
+                districtSelect.appendChild(option);
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="images/logozerdio.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="munam.html">MŨ NAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="munu.html">MŨ NỮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mutreem.html">MŨ TRẺ EM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                </ul>
+                <form class=" tkim d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="">
+                    <a href="./login.html"><i class=" icon fa-solid fa-user"></i></a>
+                    <a href="gh.html"><i class=" icon fa-solid fa-cart-shopping"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-------------------------------------->
+    <div class="bgmsp">
+        <br> <br>
+        <form action="payment.html" method="post" onsubmit="submitForm(event)">
+            <label for="name">Họ và tên:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="address">Địa chỉ:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <label for="phone">Số điện thoại:</label><br>
+            <input type="text" id="phone" name="phone" required><br>
+            <label for="city">Tỉnh/Thành phố:</label><br>
+            <select id="city" name="city" onchange="createDistrictOptions()">
+                <option value="">Chọn tỉnh/thành phố</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                <!-- Thêm các tỉnh/thành phố khác vào đây -->
+            </select><br>
+            <label for="district">Quận/Huyện:</label><br>
+            <select id="district" name="district">
+                <option value="">Chọn quận/huyện</option>
+            </select><br>
+            <label for="ward">Phường/Xã:</label><br>
+            <input type="text" id="ward" name="ward" placeholder="Phường/Xã"><br><br>
+            <input type="submit" value="MUA NGAY">
+        </form>
+    </div>
+
+    <!--------------------------phần cuối-->
+    <div>
+        <div style="background-color: rgb(134, 134, 134); width: 100%; height: 300px;">
+            <div class="row" style="color: aliceblue;">
+                <div class="col-lg-3">
+                    <h3>Giới thiệu</h3>
+                    <p>ZERDIO chuyên kinh doanh các loại mũ nón thời trang cao cấp như mũ lưỡi trai, nón snapback,
+                        mũ
+                        bucket, mũ nồi beret, mũ len, mũ phớt cho cả Nam & Nữ. Chúng tôi cam kết luôn cập nhật những
+                        mẫu
+                        mới nhất vì chúng tôi muốn bạn đẹp nhất.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Tư vấn mua hàng: 0385.931.692 <br>
+
+                        Góp ý & Khiếu nại: 0919.332.108 <br>
+
+                        Email: CSKH@Zerdio.com.vn <br>
+
+                        Địa chỉ: CT5 Khu đô thị Xa la, phường Phúc La, Hà Đông, Hà Nội <br>
+
+                        Trụ sở: Quốc lộ 1A, Khối Nam, Diễn Hồng, Diễn Châu, Nghệ An</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Chính sách bán hàng</h3>
+                    <p>
+                        Chính sách vận chuyển <br>
+                        Chính sách đổi trả <br>
+                        Chính sách bảo mật <br>
+                        Điều khoản dịch vụ <br>
+                        Phương thức thanh toán <br>
+                        Hướng dẫn mua hàng</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Kênh truyền thông </h3>
+                    <div style="font-size: 50px; color: aliceblue;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.cach{
+    padding-top: 40px;
+margin-left: 80px;
+}
+.icon{
+    margin: 5px;
+    margin-top: 12px;
+    background-color: aquamarine;
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+   text-align: center;
+   padding-top: 4px;
+}
+.v{ 
+    margin-left: 20px;
+    border: 1px solid chocolate;
+}
+.button{
+    border-radius: 5px;
+    border: 2px;
+    background-color: rgb(230, 219, 219);
+}

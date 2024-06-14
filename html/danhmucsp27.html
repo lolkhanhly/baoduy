@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mũ thời trang hàng đầu</title>
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="toanboweb.css">
+    <style>
+        /* CSS để xoay mũi tên */
+        .slick-prev,
+        .slick-next {
+            font-size: 0;
+            /* Ẩn văn bản */
+            line-height: 0;
+            /* Ẩn văn bản */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .slick-prev {
+            left: -30px;
+            /* Điều chỉnh vị trí của mũi tên trái */
+        }
+
+        .slick-next {
+            right: -30px;
+            /* Điều chỉnh vị trí của mũi tên phải */
+        }
+
+        /* Xoay mũi tên */
+        .slick-prev:before,
+        .slick-next:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            /* Màu của mũi tên */
+            transform: rotate(45deg);
+            /* Xoay mũi tên */
+        }
+
+        .slick-prev:before {
+            transform: rotate(-135deg);
+            /* Xoay mũi tên trái */
+        }
+        .slider img {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="images/logozerdio.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="munam.html">MŨ NAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="munu.html">MŨ NỮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mutreem.html">MŨ TRẺ EM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                </ul>
+                <form class=" tkim d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="">
+                    <a href="./login.html"><i class=" icon fa-solid fa-user"></i></a>
+                    <a href="gh.html"><i class=" icon fa-solid fa-cart-shopping"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-------phần giữa------------------------------->
+    <div style="background-color: rgb(190, 190, 190);width: 100%;height: 30px;"></div>
+    <!---->
+    <div style="margin: 30px">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img width="70%" src="images/8.jpg" class="d-block" alt="...">
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 36.jpg" class="d-block w-100" alt="...">
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 37.jpg" class="d-block w-100" alt="...">
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 38.jpg" class="d-block w-100" alt="...">
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 39.jpg" class="d-block w-100" alt="...">
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 40.jpg" class="d-block w-100" alt="...">
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 101.jpg" class="d-block w-100" alt="...">
+                            <br>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class=" ql carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class=" ql carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <body>
+                    <div class="slider">
+                        <img src="images/8.jpg" alt="">
+                        <img src="images/sản phẩm 37.jpg" alt="">
+                        <img src="images/sản phẩm 38.jpg" alt="">
+                        <img src="images/sản phẩm 39.jpg" alt="">
+                        <img src="images/sản phẩm 40.jpg" alt="">
+                        <img src="images/sản phẩm 41.jpg" alt="">
+                        <img src="images/sản phẩm 102.jpg" alt="">
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $(".slider").slick({
+                                infinite: false,
+                                slidesToShow: 4,
+                                slidesToScroll: 1,
+                                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                                nextArrow: '<button type="button" class="slick-next">Next</button>'
+                            });
+                        });
+                    </script>
+                </body>
+            </div>
+            <div class="col-lg-6">
+                <br> <br> <br>
+                <h3><b style="color: rgb(105, 105, 105)">Nón Bucket, Mũ Vành Tròn Nam Nữ 2 <br>
+                        Mặt Trơn Classic Cao Cấp</b></h3>
+
+                <div>
+                    <del>235.000 VND</del>
+                    <h5 style="display: inline-block; color: rgb(216, 0, 0)"> 165.000 VND</h5>
+                </div>
+                <ul>
+                    <li style="margin-top: 10px; font-size: 19px;color: rgb(121, 121, 121)">Kiểu dáng: Mũ bucket / Nón
+                        tai bèo / Mũ vành tròn</li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Size: Vòng đầu 55-60 cm</li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Chất liệu: 100% cotton 2 lớp
+                    </li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Màu sắc: Đen, trắng
+                    </li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Giới tính phù hợp: Nam, nữ
+                    </li>
+                </ul>
+                <h5>>>>Link shopee: <a style="text-decoration: none" href="">https://shope.ee/7zkgniWuKe</a></h5>
+                <!---->
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="quantity" style="margin-left: -40%">
+                                <button onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="1" min="1">
+                                <button onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" style=" margin-left: -13%;">
+                            <a style="text-decoration: none" href="gh.html"> <button
+                                    style="border: none;background-color: rgb(210, 110, 75);font-weight: 700;color: white;border-radius: 4px;padding: 7px">THÊM
+                                    VÀO GIỎ HÀNG</button></a>
+                        </div>
+                        <div class="col-lg-4" style=" margin-left: -4%;">
+                            <a href="phanmuasp.html"> <button
+                                    style="border: none;background-color: rgb(68, 96, 132);font-weight: 700;color: white;border-radius: 4px;padding: 7px">MUA
+                                    NGAY
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <br>
+                <div style="border: 1px solid gray; padding: 30px">
+                    <div class="row">
+                        <div class="col-lg-4" style="text-align: center">
+                            <img width="20%" src="images/freeship-300x300.png" alt="">
+                            <h5><b>MIỄN PHÍ VẬN CHUYỂN</b></h5>
+                            <p>Miễn phí vận chuyển đơn từ 250K.</p>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center">
+                            <img width="20%" src="images/kiemhang.png" alt="">
+                            <h5><b>THỬ HÀNG THANH TOÁN</b></h5>
+                            <p>An tâm khi mua hàng online..</p>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center">
+                            <img width="20%" src="images/doitra.png" alt="">
+                            <h5><b>30 NGÀY ĐỔI <br> TRẢ</b></h5>
+                            <p>Đổi trả nếu quý khách không hài lòng..</p>
+                        </div>
+                    </div>
+                    <h6 style="text-align: center">Liên hệ tư vấn: <b style="color: rgb(36, 36, 177)">0919.332.108 -
+                            0385.931.692</b></h6>
+                </div>
+
+            </div>
+        </div>
+        <br> <br>
+        <!------------------->
+        <h4>MÔ TẢ</h4>
+        <h6>Bạn đang muốn tìm mua mũ vành tròn nam cho mình hay cho người thân và bạn bè? Đừng bỏ lỡ kiểu mũ bucket vành
+            tròn nam nữ 2 mặt trơn Classic phong cách Hàn Quốc, chất liệu vải cao cấp của <b
+                style="font-size: 20px; color: blue;">ZERDIO</b>. Chắc chắn bạn sẽ hài
+            lòng về sản phẩm này đấy!</h6>
+        <h2><b>Mũ vành tròn nam thời trang</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Mũ nón là món đồ mà hầu như ai cũng sử dụng đến và việc sở hữu mũ vành tròn không chỉ tiện lợi mà còn là món
+            phụ kiện thời trang mang đến điểm nhấn cho cả bộ đồ. Đây vẫn là một item không thể thiếu trong tủ đồ của
+            giới trẻ.
+            <br><br>
+            Tạo cảm giác năng động và cuốn hút hơn khi phối với mọi outfit, mũ vành tròn bucket đã và đang được lăng xê
+            rất nhiều trên mạng xã hội, tạo ra những cảm hứng thời trang cho các thương hiệu lớn.
+            <br><br>
+            Chẳng cần tìm lâu, đây chính là chiếc mũ vành tròn nam mà bạn có thể diện từ hè sang đông, kiểu mũ hottrend
+            này vẫn chưa bao giờ có dấu hiệu hạ nhiệt.
+        </p>
+        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/_3RUqOHf2Tw"
+            title="Nón vành tròn, Mũ bucket tai bèo nam nữ trơn kiểu dáng Basic vải cotton 2 lớp cao cấp - ZERDIO"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Che nắng tốt, có thiết kế đa dạng và tính linh hoạt cao nên mũ vành tròn là món phụ kiện mà bất cứ anh
+            chàng, cô nàng sành mặc nào cũng có trong tủ đồ.Cùng tham khảo ngay chi tiết sản phẩm nhé!
+        </p>
+        <h6>Phong cách thời trang cổ điển: “Cổ” nhưng chưa bao giờ “Cũ”. Vẻ đẹp truyền thống luôn được ưa chuộng trong
+            một thời gian dài và chưa bao giờ có dấu hiệu hạ nhiệt. Mũ lưỡi trai đen trơn luôn hợp thời trang, nói không
+            với lỗi mốt.
+            <br> <br>
+            Là một tín đồ thời trang hiện đại nhưng bạn đã quá nhàm chán với những thiết kế mang màu sắc nổi bật bắt
+            mắt. Bạn nên sỡ hữu ngay một chiếc mũ lưỡi trai đen trơn đơn giản nhưng cực kì thu hút của ZERDIO.
+            <br> <br>
+            Với thiết kế đơn sắc không hoạ tiết, nón lưỡi trai đen mang đến cho bạn một phong cách thời thượng, cá tính
+            hơn hẳn. Chiếc mũ lưỡi trai này chính là món phụ kiện mà ai ai cũng muốn có.
+        </h6>
+        <h2><b>Thiết kế vành rộng</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Phần vành tròn chính là điểm nhấn của chiếc mũ đúng như tên gọi của nó. Phần vành khá rộng có tác dụng che
+            mưa, nắng hay sử dụng như một món phụ kiện thời trang độc đáo.
+            <br><br>
+            Mũ vành tròn nam sở hữu phần vành mũ có độ rộng vừa phải, mũ không có độ dốc cao nhưng vẫn có khả năng che
+            chắn tốt cho phần gương mặt của bạn.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 74.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Phần vành rộng có độ dốc giúp tạo độ che phủ tốt
+                    cho gương mặt của bạn</i></p>
+        </div>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Đây sẽ là lựa chọn phù hợp cho những ai không thích kiểu dáng rườm rà. Với thiết kế mũ tròn, đỉnh dẹt ôm
+            đầu, phần vành hình tròn bao quanh khuôn mặt. Dáng mũ này có thể phù hợp với nhiều kiểu gương mặt.
+            <br><br>
+            Mũ vành tròn rất hợp với những bạn nam mặt vuông và sẽ giúp làm hài hòa hơn những đường nét góc cạnh của
+            khuôn mặt. Ngay cả với mặt tròn thì <b>nón vành tròn cho nam</b> cũng sẽ làm cho khuôn mặt càng thêm hài
+            hòa.
+        </p>
+        <h2><b>Phong cách thời trang tối giản</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Phong cách thời trang mà nón vành tròn nam mang tới chính là Classic – Một trong những xu hướng rất được ưa
+            chuộng hiện nay.
+            <br><br>
+            Mặc dù hướng đến sự đơn giản, nhưng chủ nghĩa tối giản lại không khiến bạn trông nhàm chán. Phong cách này
+            cực ký phù hợp với phái mạnh luôn muốn sự nhanh chóng, tiện lợi.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 75.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Thiết kế theo xu hướng phong cách thời trang tối
+                    giản</i></p>
+        </div>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Một trong những đặc điểm đáng chú ý của dòng sản phẩm mũ vành tròn cho nam này chính là sự đơn giản, thanh
+            lịch trong phong cách thiết kế. Do đó, sản phẩm này rất ít khi bị lỗi mốt.
+            <br><br>
+            Sản phẩm mũ vành tròn nam đẹp phong cách thời trang tối giản được các nhà thiết kế sẽ hạn chế tối đa việc sử
+            dụng các họa tiết, hoa văn không cần thiết trên thiết kế của mình. Thay vào đó sẽ tạo ấn tưởng bởi sự tỉ mỉ,
+            tinh tế trên các đường nét cắt may, form dáng và chất liệu vải.
+        </p>
+        <h2><b>Chất liệu 100% Cotton cao cấp</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Một sản phẩm mũ vành tròn nam cao cấp mang phong cách thời trang tối giản trở nên thanh thoát, có giá trị
+            hơn một phần là nhờ vào chất liệu vải.
+            <br><br>
+            Mũ vành tròn cho nam có thiết kế đơn giản, không màu mè, họa tiết và được đánh giá cao về chất liệu sản
+            phẩm. Chất liệu 100% cotton có khả năng thấm hút mồ hôi, mang đến sự thoáng mát khi sử dụng.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 76.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Sử dụng chất liệu 100% cotton từ bông tinh
+                    khiết</i></p>
+        </div>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Vải cotton là sợi vải tự nhiên được làm từ nguyên liệu chính là sợi bông nên thân thiện với môi trường và
+            không gây kích ứng da.
+            <br><br>
+            Sản phẩm được tạo ra với các đường may, cắt cơ bản nhưng đều đặn, tỉ mỉ đến từng đường kim mũi chỉ. Vải may
+            dày dặn, chống nhăn và chống bụi bẩn tốt.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 77.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Những đường cắt may đều đẹp, tỉ mỉ giúp khẳng định
+                    chất lượng sản phẩm</i></p>
+        </div>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            <b>Mũ vải vành tròn nam</b> ZERDIO có chất liệu nhanh khô, dễ dàng vệ sinh sau khi sử dụng. Bên cạnh đó chất
+            liệu
+            vải 100% cotton mềm mại cũng rất thuận lợi trong việc gấp gọn lại và mang theo khi di chuyển.
+            <br><br>
+            Sản phẩm mũ vành tròn nam nữ 2 mặt trơn thích hợp sử dụng vào mọi mùa trong năm, không chỉ giúp chống nắng
+            mà còn có tính thẩm mỹ cao nhờ thiết kế 2 mặt tiện dụng.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 78.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Chất liệu vải mềm giúp bạn dễ dàng gấp gọn mang
+                    theo. Thật sự tiện lợi!</i></p>
+        </div>
+        <h2><b>Màu sắc chủ đạo phong cách thời trang tối giản</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Những đường cắt đơn giản, màu sắc dịu và chất liệu cao cấp là trọng tâm của thiết kế thời trang trong chủ
+            nghĩa tối giản.
+            <br><br>
+            Phong cách tối giản luôn là xu thế thịnh hành bởi các gam màu cơ bản không bị ảnh hưởng bởi thời gian.Màu
+            sắc chủ đạo đối với phong cách này chính là các màu sắc trung tính, phổ biến nhất là: trắng, đen, xám, ghi,
+            xanh navy.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 79.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Những gam màu đen, trắng chủ đạo trong phong cách
+                    thời trang tối giản</i></p>
+        </div>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Sản phẩm nón tròn vành nam có 2 gam màu đen, trăng cơ bản được nhiều tín đồ thời trang tối giản ưa chuộng.
+            Với 2 gam màu đen, trắng tối giản, sản phẩm rất tiện dụng trong mọi bối cảnh, mang hơi hướng unisex và dễ
+            dàng phối đồ.
+            <br><br>
+            Ngoài ra, mũ vành tròn gam màu này tương thích với nhiều nhóm đối tượng ở các độ tuổi khác nhau. Nên bạn có
+            thể yên tâm lựa chọn làm món quà dành tặng người thân và bạn bè.
+        </p>
+        <h2><b>Nón vành tròn nam và nữ kiểu dáng unisex</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Trang phục và phụ kiẹn theo xu hướng tối giản thường được thiết kế với form dáng thoải mái, suông rộng. Mũ
+            vành tròn nam có lòng mũ rộng và sâu, không gây gò bó, khó chịu, giúp phù hợp với mọi kích thước vòng đầu.
+            <br><br>
+            Một mẹo nhỏ cho những ai có vòng đầu nhỏ: Hãy ngâm mũ vào nước lạnh qua đêm, chất liệu vải cotton sẽ co lại.
+            Như vậy, chiếc mũ vành tròn nam yêu thích sẽ vừa vặn hơn với vòng đầu của bạn.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 80.jpg" alt="">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; color: rgb(105, 105, 105)"><i>Lòng mũ sâu và rộng tới 60 cm giúp bạn luôn cảm
+                    giác thoải mái khi đội. Nếu muốn vừa vặn hơn hãy ngâm vào nước lạnh qua đêm.</i></p>
+        </div>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Vì có thiết kế đơn giản cùng phần vành nhỏ đặc trưng nên những kiểu dáng mũ này sẽ phù hợp hơn cho những
+            trang phục phong cách năng động như áo phông, quần jeans hay sơ mi và những mẫu đầm suông dài.
+            <br><br>
+            Các bạn có thể sử dụng làm mũ đi biển hay đi dạo phố hay kết hợp với nhiều phong cách thời trang khác nhau.
+            Dù là nam hay nữ thì những chiếc mũ tai bèo vẫn luôn là lựa chọn phù hợp dành cho bạn.
+        </p>
+        <h2><b>Lời kết:</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Nếu bạn đang muốn tìm mua mũ vành tròn thì đây chắc hẳn là lựa chọn mà bạn nên cân nhắc. Nếu muốn sử dụng mũ
+            bucket hat trong đời sống hàng ngày, cách an toàn nhất là chọn một chiếc mũ trơn có thiết kế đơn giản.
+            <br><br>
+            Mũ vành tròn nam nữ là một trong những dòng mũ bucket được ưa chuộng hiện nay nhờ thiết kế đơn giản và chất
+            liệu cotton 2 lớp cao cấp mang đến sự dễ chịu cho người sử dụng.
+            <br><br>
+            Nếu bạn yêu thích sản phẩm này của <b>ZERDIO</b>, hãy liên hệ qua <b>SĐT/ZALO: 0919 332 108</b> để được nhân viên chăm sóc
+            khách hàng tư vấn thêm hoặc truy cập link <b style="font-size: 20px; color: blue;">https://zerdio.com.vn/mu-bucket-nam/ </b>để xem thêm nhiều sản phẩm mũ
+            vành tròn nam và nữ của <b>ZERDIO</b> bạn nhé!
+        </p>
+    </div>
+    <!--------------------------phần cuối-->
+    <div>
+        <div style="background-color: rgb(134, 134, 134); width: 100%; height: 300px;">
+            <div class="row" style="color: aliceblue;">
+                <div class="col-lg-3">
+                    <h3>Giới thiệu</h3>
+                    <p>ZERDIO chuyên kinh doanh các loại mũ nón thời trang cao cấp như mũ lưỡi trai, nón snapback, mũ
+                        bucket, mũ nồi beret, mũ len, mũ phớt cho cả Nam & Nữ. Chúng tôi cam kết luôn cập nhật những mẫu
+                        mới nhất vì chúng tôi muốn bạn đẹp nhất.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Tư vấn mua hàng: 0385.931.692 <br>
+
+                        Góp ý & Khiếu nại: 0919.332.108 <br>
+
+                        Email: CSKH@Zerdio.com.vn <br>
+
+                        Địa chỉ: CT5 Khu đô thị Xa la, phường Phúc La, Hà Đông, Hà Nội <br>
+
+                        Trụ sở: Quốc lộ 1A, Khối Nam, Diễn Hồng, Diễn Châu, Nghệ An</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Chính sách bán hàng</h3>
+                    <p>
+                        Chính sách vận chuyển <br>
+                        Chính sách đổi trả <br>
+                        Chính sách bảo mật <br>
+                        Điều khoản dịch vụ <br>
+                        Phương thức thanh toán <br>
+                        Hướng dẫn mua hàng</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Kênh truyền thông </h3>
+                    <div style="font-size: 50px; color: aliceblue;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

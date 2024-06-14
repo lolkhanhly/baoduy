@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mũ thời trang hàng đầu</title>
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="toanboweb.css">
+    <style>
+        /* CSS để xoay mũi tên */
+        .slick-prev,
+        .slick-next {
+            font-size: 0;
+            /* Ẩn văn bản */
+            line-height: 0;
+            /* Ẩn văn bản */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .slick-prev {
+            left: -30px;
+            /* Điều chỉnh vị trí của mũi tên trái */
+        }
+
+        .slick-next {
+            right: -30px;
+            /* Điều chỉnh vị trí của mũi tên phải */
+        }
+
+        /* Xoay mũi tên */
+        .slick-prev:before,
+        .slick-next:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            /* Màu của mũi tên */
+            transform: rotate(45deg);
+            /* Xoay mũi tên */
+        }
+
+        .slick-prev:before {
+            transform: rotate(-135deg);
+            /* Xoay mũi tên trái */
+        }
+        .slider img {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="images/logozerdio.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="munam.html">MŨ NAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="munu.html">MŨ NỮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mutreem.html">MŨ TRẺ EM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                </ul>
+                <form class=" tkim d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="">
+                    <a href="./login.html"><i class=" icon fa-solid fa-user"></i></a>
+                    <a href="gh.html"><i class=" icon fa-solid fa-cart-shopping"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-------phần giữa------------------------------->
+    <div style="background-color: rgb(190, 190, 190);width: 100%;height: 30px;"></div>
+    <!---->
+    <div style="margin: 30px">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img width="70%" src="images/7.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 31.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 32.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 33.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 34.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 35.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 99.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="70%" src="images/pham 100.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class=" ql carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class=" ql carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <body>
+                    <div class="slider">
+                        <img src="images/7.jpg" alt="">
+                        <img src="images/sản phẩm 32.jpg" alt="">
+                        <img src="images/sản phẩm 33.jpg" alt="">
+                        <img src="images/sản phẩm 34.jpg" alt="">
+                        <img src="images/sản phẩm 35.jpg" alt="">
+                        <img src="images/sản phẩm 36.jpg" alt="">
+                        <img src="images/sản phẩm 100.jpg" alt="">
+                        <img src="images/sản phẩm 101.jpg" alt="">
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $(".slider").slick({
+                                infinite: false,
+                                slidesToShow: 4,
+                                slidesToScroll: 1,
+                                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                                nextArrow: '<button type="button" class="slick-next">Next</button>'
+                            });
+                        });
+                    </script>
+                </body>
+            </div>
+            <div class="col-lg-6">
+                <br> <br> <br>
+                <h3><b style="color: rgb(105, 105, 105)">Mũ Lưỡi Trai Hiphop Đẹp Cho Nam và <br>
+                        Nữ</b></h3>
+                <div>
+                    <del>250.000 VND</del>
+                    <h5 style="display: inline-block; color: rgb(216, 0, 0)"> 165.000 VND</h5>
+                </div>
+                <ul>
+                    <li style="margin-top: 10px; font-size: 19px;color: rgb(121, 121, 121)">Kiểu dáng: Mũ snapback – Nón
+                        hiphop</li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Size: Vòng đầu 55-60 cm</li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Chất liệu: Kaki</li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Màu sắc: Đen
+                    </li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Giới tính phù hợp: Nam, nữ
+                    </li>
+                    <li style="margin-top: 10px; font-size: 19px;color:rgb(121, 121, 121)">Chốt khóa: Khóa cài nhựa</li>
+                </ul>
+                <h5>>>>Link shopee: <a style="text-decoration: none" href="">https://shope.ee/7zkgniWuKe</a></h5>
+                <!---->
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="quantity" style="margin-left: -40%">
+                                <button onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="1" min="1">
+                                <button onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" style=" margin-left: -13%;">
+                            <a style="text-decoration: none" href="gh.html"> <button
+                                    style="border: none;background-color: rgb(210, 110, 75);font-weight: 700;color: white;border-radius: 4px;padding: 7px">THÊM
+                                    VÀO GIỎ HÀNG</button></a>
+                        </div>
+                        <div class="col-lg-4" style=" margin-left: -4%;">
+                            <a href="phanmuasp.html"> <button
+                                    style="border: none;background-color: rgb(68, 96, 132);font-weight: 700;color: white;border-radius: 4px;padding: 7px">MUA
+                                    NGAY
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <br>
+                <div style="border: 1px solid gray; padding: 30px">
+                    <div class="row">
+                        <div class="col-lg-4" style="text-align: center">
+                            <img width="20%" src="images/freeship-300x300.png" alt="">
+                            <h5><b>MIỄN PHÍ VẬN CHUYỂN</b></h5>
+                            <p>Miễn phí vận chuyển đơn từ 250K.</p>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center">
+                            <img width="20%" src="images/kiemhang.png" alt="">
+                            <h5><b>THỬ HÀNG THANH TOÁN</b></h5>
+                            <p>An tâm khi mua hàng online..</p>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center">
+                            <img width="20%" src="images/doitra.png" alt="">
+                            <h5><b>30 NGÀY ĐỔI <br> TRẢ</b></h5>
+                            <p>Đổi trả nếu quý khách không hài lòng..</p>
+                        </div>
+                    </div>
+                    <h6 style="text-align: center">Liên hệ tư vấn: <b style="color: rgb(36, 36, 177)">0919.332.108 -
+                            0385.931.692</b></h6>
+                </div>
+
+            </div>
+        </div>
+        <br> <br>
+        <!------------------->
+        <h4>MÔ TẢ</h4>
+        <h6>ZERDIO giới thiệu đến bạn chiếc <b style="font-size: 20px; color: blue;">mũ lưỡi trai hiphop</b> hay còn gọi
+            là <b style="font-size: 20px; color: blue;">mũ snapback</b> màu đen với logo thêu nổi bật
+            ở trung tâm, phần lưỡi trai phẳng in họa tiết đẹp, chất liệu kaki cao cấp đang được giới trẻ yêu thích nhất
+            hiện nay. Tham khảo ngay chi tiết sản phẩm!</h6>
+        <h2><b>Video Review mũ lưỡi trai hiphop</b></h2>
+        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/y1N7iAJpGEM?si=zz5I1XW7M5eymYP_"
+            title="YouTube video player" frameborder="0"></iframe>
+        <h6>Phong cách thời trang cổ điển: “Cổ” nhưng chưa bao giờ “Cũ”. Vẻ đẹp truyền thống luôn được ưa chuộng trong
+            một thời gian dài và chưa bao giờ có dấu hiệu hạ nhiệt. Mũ lưỡi trai đen trơn luôn hợp thời trang, nói không
+            với lỗi mốt.
+            <br> <br>
+            Là một tín đồ thời trang hiện đại nhưng bạn đã quá nhàm chán với những thiết kế mang màu sắc nổi bật bắt
+            mắt. Bạn nên sỡ hữu ngay một chiếc mũ lưỡi trai đen trơn đơn giản nhưng cực kì thu hút của ZERDIO.
+            <br> <br>
+            Với thiết kế đơn sắc không hoạ tiết, nón lưỡi trai đen mang đến cho bạn một phong cách thời thượng, cá tính
+            hơn hẳn. Chiếc mũ lưỡi trai này chính là món phụ kiện mà ai ai cũng muốn có.
+        </h6>
+        <h2><b>Hình ảnh chi tiết mũ lưỡi trai hiphop</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Một điểm khác biệt lớn giúp bạn phân biệt được nón snapback và mũ lưỡi trai chính là snapback thì phần lưỡi
+            phẳng giúp che nắng hiệu quả và tạo nên một phong cách đậm chất hiphop.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 65.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Đối với giới trẻ hiện nay, đặc biệt là với những ai theo phong cách năng động, cá tính luôn muốn sở hữu một
+            chiếc mũ lưỡi trai hiphop phù hợp cho riêng mình.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 66.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Với kiểu dáng độc đáo và thiết kế vành nón rộng và phẳng, Mũ Lưỡi Trai Hiphop Đẹp giúp bạn có được phong
+            cách thời trang cá tính.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 67.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Đây là một trong những mẫu mũ snapback được bán chạy nhất tại ZERDIO. Sản phẩm gây ấn tượng với họa tiết màu
+            sắc được thêu viền trắng nổi bật trên nền đen của mũ snapback.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 68.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Hình ảnh một người đàn ông đang cầu nguyện với dòng chữ màu đen ” Only God Can Judge Me”. Tạm dịch là: Chỉ
+            có chúa mới có thể phán xét tôi.
+            <br><br>
+            Đồng thời truyền tải thông điệp: “Đừng xét đoán kẻo bị xét đoán”. Chúng ta không được đánh giá người khác
+            một cách đạo đức giả và thiếu thiện cảm. Đây là một điều đáng nhớ!
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 69.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Logo thêu chữ màu trắng viền tím tạo điểm nhấn ở phần bên hông mũ. Mũ snapback Cayler & Sons là từ khóa tìm
+            kiếm của nhiều bạn trẻ dành tình cảm cho mũ Snapback.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 70.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Thiết kế của chiếc nón Snapback được điều chỉnh kích thước bằng phần khóa nhựa ở phía sau. Màu khóa nhựa
+            cùng tone màu với phần chữ Cayler & Sons thêu nổi.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 71.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Mũ Lưỡi Trai Hiphop được tạo nên từ 6 miếng ghép đều nhau, đường chỉ may cẩn thận và chắc chắn giúp thân nón
+            không dễ bị biến dạng.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 72.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Chất liệu vải kaki cao cấp giúp chiếc mũ giữ form tốt ngay cả khi bạn cầm trên tay. Viền đai cotton bên
+            trong giúp thấm hút mồ hôi tốt, tạo cảm giác thoải mái khi sử dụng.
+        </p>
+        <img width="60%" style="margin-left: 200px" src="images/trang 73.jpg" alt="">
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Họa tiết ở phần vành mũ cũng là điểm nhấn của kiểu mũ snapback này. Thiết kế và hoạ tiết khá đơn giản nhưng
+            ấn tượng. Snapback phù hợp hầu hết với các trang phục phong cách streetstyle.
+        </p>
+        <h2><b>Liên hệ mua hàng</b></h2>
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            SĐT hoặc ZALO: <b>0919.332.108</b>
+        </p>    
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Fb: https://facebook.com/zerdio.Hat/
+        </p>    
+        <p style="font-size: 20px; color: rgb(105, 105, 105)">
+            Website: <b style="font-size: 20px; color: blue;"> https://zerdio.com.vn/</b>
+        </p>    
+    </div>
+    <!--------------------------phần cuối-->
+    <div>
+        <div style="background-color: rgb(134, 134, 134); width: 100%; height: 300px;">
+            <div class="row" style="color: aliceblue;">
+                <div class="col-lg-3">
+                    <h3>Giới thiệu</h3>
+                    <p>ZERDIO chuyên kinh doanh các loại mũ nón thời trang cao cấp như mũ lưỡi trai, nón snapback, mũ
+                        bucket, mũ nồi beret, mũ len, mũ phớt cho cả Nam & Nữ. Chúng tôi cam kết luôn cập nhật những mẫu
+                        mới nhất vì chúng tôi muốn bạn đẹp nhất.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Tư vấn mua hàng: 0385.931.692 <br>
+
+                        Góp ý & Khiếu nại: 0919.332.108 <br>
+
+                        Email: CSKH@Zerdio.com.vn <br>
+
+                        Địa chỉ: CT5 Khu đô thị Xa la, phường Phúc La, Hà Đông, Hà Nội <br>
+
+                        Trụ sở: Quốc lộ 1A, Khối Nam, Diễn Hồng, Diễn Châu, Nghệ An</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Chính sách bán hàng</h3>
+                    <p>
+                        Chính sách vận chuyển <br>
+                        Chính sách đổi trả <br>
+                        Chính sách bảo mật <br>
+                        Điều khoản dịch vụ <br>
+                        Phương thức thanh toán <br>
+                        Hướng dẫn mua hàng</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Kênh truyền thông </h3>
+                    <div style="font-size: 50px; color: aliceblue;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
